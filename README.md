@@ -104,3 +104,52 @@ Final Grounded Response
 ---
 
 ## 📂 Repository Structure
+
+College-Admission-Agent-RAG/
+│
+├── README.md                  # Comprehensive Project Documentation
+├── PPT/
+│   └── Project_Presentation.pptx  # Core Technical Presentation Slides
+├── Langflow/
+│   ├── flow.json              # Exported Langflow Orchestration Graph
+│   └── screenshots/           # Backend Pipeline Execution State Visuals
+├── Watsonx-Orchestrate/
+│   └── screenshots/           # Chat Widget & Live Cloud Tooling Visuals
+├── Knowledge-Base/
+│   └── documents/             # Sample Structured Data Sheets / FAQs
+└── Images/
+    └── architecture.png       # Core High-Level System Architecture Diagram
+
+    
+---
+
+## 📊 Results
+
+- ⚡ Fast semantic search (milliseconds)  
+- 🎯 No hallucination (strict grounding)  
+- 📉 “Data not found” fallback enabled  
+- 🚀 Scalable enterprise-ready system  
+
+---
+
+## 🔮 Future Scope
+
+- Voice-based admission bot  
+- Multilingual support  
+- Cloud vector DB migration  
+- Smarter autonomous AI agents  
+
+---
+
+## ✍️ Author
+
+Saurabh Kumar Maurya  
+B.Tech – Electrical Engineering  
+Rajkiya Engineering College, Ambedkar Nagar  
+
+---
+
+## 🎓 Internship
+
+IBM SkillsBuild AICTE Internship 2026  
+Track: AI & Enterprise Automation
