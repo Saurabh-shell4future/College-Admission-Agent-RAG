@@ -26,16 +26,13 @@ Vector Database: FAISS (Facebook AI Similarity Search) Local Indexer
 Integration Workspace: IBM watsonx Orchestrate Integration Gateway
 Core Implementation: Python 3.10+ & REST API Integration
 ✨ Key Features
-Natural Language Admission Support: Handles complex multi-turn student queries
-Intelligent Course Guidance: Maps student profiles to eligible academic programs (Pharmacy, Diploma, B.Sc, etc.)
-Factual Grounding: Zero-overlap chunking strategy (Chunk Size: 1000, Overlap: 0) to avoid data contamination
-Vectorized Processing: Fast semantic search using FAISS nearest-neighbor indexing
-Enterprise Deployment: Integrated with IBM watsonx Orchestrate cloud environment
+Natural Language Admission Support for multi-turn queries
+Intelligent Course Guidance (Pharmacy, Diploma, B.Sc, etc.)
+Factual Grounding using zero-overlap chunking (Chunk Size: 1000, Overlap: 0)
+Fast semantic search using FAISS vector indexing
+Enterprise-grade deployment using IBM watsonx Orchestrate
 🏗️ System Architecture & Workflow
-
-The system separates data ingestion from runtime orchestration to ensure low latency (~1.5–2.8 seconds):
-
-[Raw Dataset: 20k Records]
+[Raw Dataset: 20,000 Records]
         │
         ▼
 [Langflow Text Splitter (\n, Overlap: 0)]
@@ -44,7 +41,7 @@ The system separates data ingestion from runtime orchestration to ensure low lat
 [FAISS Vector Index]
         │
         ▼
-[User Natural Query]
+[User Natural Language Query]
         │
         ▼
 [watsonx Orchestrate API Gateway]
@@ -58,12 +55,12 @@ The system separates data ingestion from runtime orchestration to ensure low lat
         ▼
 [Grounded Response]
 🔄 Workflow Steps
-Query Submission: User sends an admission-related query via frontend
-Vector Conversion: Query is converted into embeddings
-Similarity Search: FAISS retrieves nearest matching records
-Context Extraction: Relevant chunks are isolated
-Model Grounding: Data is injected into IBM Granite via strict prompt structure
-Response Generation: Final grounded response is returned to user
+User submits admission-related query via frontend
+Query is converted into embeddings
+FAISS performs similarity search on dataset
+Relevant context chunks are retrieved
+Data is passed to IBM Granite model
+Final grounded response is generated and returned
 💻 Project Implementations
 1. Langflow-Based RAG Pipeline
 CSV ingestion (e.g., Attendance_Prediction.csv)
@@ -74,7 +71,7 @@ JSON parser orchestration
 2. IBM watsonx Orchestrate Agent
 Custom tool configuration for agent workflows
 Metadata-driven routing system
-Live cloud deployment for conversational AI
+Live cloud conversational deployment
 Flow status tracking via API integration
 📂 Repository Structure
 College-Admission-Agent-RAG/
@@ -96,15 +93,15 @@ College-Admission-Agent-RAG/
 └── Images/
     └── architecture.png
 📊 Performance Metrics & Results
-⚡ High efficiency semantic search over thousands of records in milliseconds
-🎯 Strict constraint adherence with zero hallucination output behavior
-📉 Automatic fallback to “Data not found” when inputs are outside dataset scope
-🚀 Scalable architecture suitable for enterprise-level admission systems
+⚡ High-speed semantic retrieval (milliseconds response time)
+🎯 Zero-hallucination output behavior with strict grounding
+📉 Automatic fallback: “Data not found” for invalid queries
+🚀 Scalable architecture for enterprise admission systems
 🔮 Future Scope
 🎙️ Voice-based admission counseling (Speech-to-Text integration)
-☁️ Migration to scalable vector DBs (IBM watsonx.data)
+☁️ Migration to cloud vector databases (IBM watsonx.data)
 🌍 Multilingual support for regional accessibility
-🤖 Enhanced AI agent autonomy with tool-augmented reasoning
+🤖 Enhanced autonomous AI agent capabilities
 ✍️ Author
 
 Saurabh Kumar Maurya
