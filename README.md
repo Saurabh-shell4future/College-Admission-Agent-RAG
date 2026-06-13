@@ -103,22 +103,44 @@ Final Grounded Response
 
 ---
 
-## 📂 Repository Structure
-
+📂 Repository Structure
 College-Admission-Agent-RAG/
-│
-├── README.md                  # Comprehensive Project Documentation
+
+
+├── README.md                   # Comprehensive Project Documentation
+
+
 ├── PPT/
-│   └── Project_Presentation.pptx  # Core Technical Presentation Slides
+
+
+│    └── Project_Presentation.pptx  # Core Technical Presentation Slides
+
+
 ├── Langflow/
-│   ├── flow.json              # Exported Langflow Orchestration Graph
-│   └── screenshots/           # Backend Pipeline Execution State Visuals
+
+
+│    ├── flow.json              # Exported Langflow Orchestration Graph
+
+
+│    └── screenshots/           # Backend Pipeline Execution State Visuals
+
+
 ├── Watsonx-Orchestrate/
-│   └── screenshots/           # Chat Widget & Live Cloud Tooling Visuals
+
+
+│    └── screenshots/           # Chat Widget & Live Cloud Tooling Visuals
+
+
 ├── Knowledge-Base/
-│   └── documents/             # Sample Structured Data Sheets / FAQs
+
+
+│    └── documents/             # Sample Structured Data Sheets / FAQs
+
+
 └── Images/
-    └── architecture.png       # Core High-Level System Architecture Diagram
+
+
+└── architecture.png       # Core High-Level System Architecture Diagram
 
     
 ---
